@@ -20,6 +20,6 @@ export const filteredPantryChip = (category) => {
     console.log(category)
     return {
         type: pantryTypes.FILTER_PANTRY_CHIP,
-        payload: category
+        payload: categ
     }
 }

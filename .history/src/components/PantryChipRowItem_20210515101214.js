@@ -9,9 +9,9 @@ function PantryChipRowItem({ categoryArr, filteredPantryChip }) {
 	return (
 		<>
 			{categoryArr.map((item) => (
-				<span onClick={() => console.log(item)}>
+				<span onClick={() => filteredPantryChip(item)}>
 					{' '}
-					<Chip className="not-active" label={item} variant="outlined" />
+					<Chip className="not-active" label={item.category} variant="outlined" />
 				</span>
 			))}
 		</>

@@ -1,10 +1,10 @@
-import { cateredRecipes, pantryArr, categoryArr} from '../../data';
+import { cateredRecipes, pantryArr} from '../../data';
 import pantryTypes from '../types';
 
 const INITIAL_STATE = {
     query: '',
     pantryArr,
-    categoryArr,
+    categoryArr: [],
 	pantryDetail: [],
 	cateredRecipes,
 	cateredRecipesDetail: [],

@@ -17,9 +17,9 @@ export const setQueryField = (text) => {
 }
 
 export const filteredPantryChip = (category) => {
-    console.log(category)
+    console.log(food)
     return {
         type: pantryTypes.FILTER_PANTRY_CHIP,
-        payload: category
+        payload: food
     }
 }

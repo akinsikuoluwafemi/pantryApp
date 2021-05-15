@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 
 function PantryChipList(props) {
-    const { categoryArr } = props;
+    const { pantryArr } = props;
     return (
 		<PantryChipRow>
 			{/* {pantryArr.map(item => <PantryChipRowItem item={ item}/>)} */}

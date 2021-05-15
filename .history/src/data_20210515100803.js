@@ -1,13 +1,6 @@
 // category = ['meat-and-poultry', 'canned-goods', 'pasta-and-rice', 'baking-items', 'snacks', 'breakfast-foods', 'nuts-and-seeds', 'mixes', 'vinegars-and-cooking-wines', 'oils', 'sauces', 'condiments', 'sweets-and-candy', 'pickled-items', 'cereals', 'spices', 'beverages', 'root-vegetables', 'breads', 'soups', 'fruits-and-vegetables', 'pet-food', 'beans-and-legumes', 'jellies-and-spreads', 'canned-meats', 'miscellaneous' ]
 
-export const categoryArr = [
-	'meat and poultry',
-	'fruit and vegetables',
-	'dairy',
-	'canned-goods',
-	'pasta-and-rice',
-	'baking-items',
-];
+export const categoryArr = ['meat and poultry'];
 
 export const pantryArr = [
 
