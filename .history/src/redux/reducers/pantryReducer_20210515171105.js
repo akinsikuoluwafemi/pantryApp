@@ -15,14 +15,16 @@ const INITIAL_STATE = {
 const pantryReducer = (state=INITIAL_STATE , action) => {
     switch(action.type){
         case pantryTypes.CREATE_PANTRY_ITEM:
+            // return [...state.pantryArr, { ...action.payload }]
             return { ...state, pantryArr: [{ ...state.pantryArr }, action.payload ]}
         case pantryTypes.SET_QUERY:
             return { ...state, query: action.payload }
         case pantryTypes.FILTER_PANTRY_CHIP:
-            if(action.payload.target.value === 'All'){
+            if(action.payload.target === 'All'){
+                alert('yes')
                 return { ...state, pantryArrCopy: state.pantryArr };
             }else {
-                return { ...state, pantryArrCopy: state.pantryArr.filter(item => item.category === action.payload.target.value) };
+                return { ...state, pantryArrCopy: state.pantryArr.filter(item => item.category === action.payload.target) };
             }
         default:
             return state;

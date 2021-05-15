@@ -25,11 +25,9 @@ function PantryItemList({ pantry, query, filteredPantryChip, categoryArr }) {
                         const className = activeIndex === index ? 'not-active active' : 'not-active';
                         console.log(index)
                         return (
-							<span onClick={() => setActiveIndex(index)}>
-								<button key={index} onClick={filteredPantryChip} value={item} className={className}>
-									{item}
-								</button>
-							</span>
+							<button key={index} onClick={() => {}} value={item} className={className}>
+								{item}
+							</button>
 						);
                         
                     })}
