@@ -1,0 +1,16 @@
+import styled from 'styled-components';
+
+
+export const MainLayout = styled.main`
+	position: relative;
+
+	& > a {
+		position: ab;
+		bottom: 4%;
+		left: 75%;
+
+		@media (min-width: 500px) {
+			left: 84%;
+		}
+	}
+`;
