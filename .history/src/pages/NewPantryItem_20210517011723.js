@@ -1,0 +1,74 @@
+import React, {useState} from 'react';
+import { motion } from 'framer-motion';
+import { NewPantrySection } from '../styles/NewPantryStyles';
+import {HeaderTitle } from '../styles/TextStyles';
+import Input from '@material-ui/core/Input';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import FilledInput from '@material-ui/core/FilledInput';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+
+
+
+export default function NewPantryItem() {
+    const [category, setCategory] = useState('');
+    const [circle, setCircle]
+    const handleChange = (e) => {
+        
+    }
+
+    
+    return (
+		<NewPantrySection
+			initial={{ scaleY: 0 }}
+			animate={{ scaleY: 1 }}
+			exit={{ scaleY: 0 }}
+			transition={{ duration: 0.3 }}
+		>
+			<HeaderTitle large>Add Pantry Item</HeaderTitle>
+
+			<form>
+				<FormControl variant="outlined" style={{ width: '100%' }}>
+					<label for="outlined-age-simple">Category*</label>
+					<Select
+						// placeholder="Enter food category"
+						value={category}
+						onChange={handleChange}
+						// input={<OutlinedInput labelWidth={this.state.labelWidth} name="age" id="outlined-age-simple" />}
+						input={<OutlinedInput name="age" id="outlined-age-simple" />}
+					>
+						<MenuItem value="">
+							<em>Enter food category</em>
+						</MenuItem>
+						<MenuItem value={10}>Ten</MenuItem>
+						<MenuItem value={20}>Twenty</MenuItem>
+						<MenuItem value={30}>Thirty</MenuItem>
+					</Select>
+				</FormControl>
+				<FormControl required className={classes.formControl}>
+					<InputLabel shrink htmlFor="circle">
+						Circle
+					</InputLabel>
+					<Select
+						value={circle}
+						displayEmpty
+						onChange={(event) => handleInput(event, 'circle')}
+						input={<Input name="circle" id="circle" />}
+					>
+						<MenuItem value="">
+							<em>select the value</em>
+						</MenuItem>
+
+						<MenuItem value={10}>Ten</MenuItem>
+						<MenuItem value={20}>Twenty</MenuItem>
+						<MenuItem value={30}>Thirty</MenuItem>
+					</Select>
+					<FormHelperText>Some important helper text</FormHelperText>
+				</FormControl>
+			</form>
+		</NewPantrySection>
+	);
+}

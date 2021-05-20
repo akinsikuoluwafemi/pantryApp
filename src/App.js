@@ -18,7 +18,7 @@ function App() {
 				<Layout>
 					<Route exact path="/:slug" component={PantryItemDetail} />
 					<Route exact path="/" component={Home} />
-				  <Route path="/pantryitems/new" component={NewPantryItem} />
+				  	<Route path="/pantryitems/new" component={NewPantryItem} />
 				  
 					{/* <Route exact path="/pantryitems/:slug/edit" component={Home} /> */}
 				</Layout>
