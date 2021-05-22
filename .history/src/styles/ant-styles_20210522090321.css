@@ -1,0 +1,13 @@
+
+.ant-select-selector, .ant-input, .ant-picker,.ant-input-number {
+    border-radius: 10px!important;
+    
+    
+
+}
+
+.submit-fields {
+    background: #FDC039;
+     width: '100%;
+      padding: '1rem 0'
+}

@@ -1,0 +1,8 @@
+
+.ant-select-selector, .ant-input, .ant-picker,.ant-input-number {
+    border-radius: 10px!important;
+    
+    &:not
+    height: 3.5rem!important;
+
+}

@@ -1,0 +1,29 @@
+
+.ant-select-selector, .ant-input, .ant-picker,.ant-input-number {
+    border-radius: 10px!important;
+    
+    
+
+}
+
+
+.react-datepicker-wrapper {
+    width: 100%;
+
+
+}
+
+.react-datepicker-wrapper input {
+    border-radius: 10px;
+    height: 30px;
+    padding: 0 11px;
+    width: 100%;
+        color: rgba(0, 0, 0, 0.85);
+
+
+}
+
+.react-datepicker__input-container{ 
+        color: rgba(0, 0, 0, 0.85);
+
+}

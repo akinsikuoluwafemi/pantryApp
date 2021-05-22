@@ -1,0 +1,16 @@
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+export const NewPantrySection = styled(motion.div)`
+	// background: pink;
+	// height: 100vh;
+
+	& > button {
+		width: 100%;
+		padding: 1rem 0;
+	}
+`;
+
+export const SubmitButton = styled.button`
+		
+`;
